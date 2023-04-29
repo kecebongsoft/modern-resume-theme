@@ -2,7 +2,7 @@
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
 @import url(https://use.fontawesome.com/releases/v5.11.2/css/all.css);
 @import url(https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css);
-
+html { -webkit-print-color-adjust: exact; }
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   appearance: none;
   background-color: #477dca;
@@ -155,10 +155,11 @@ body {
   text-align: center; }
 
 .container {
-  margin-top:30px;
+  margin-top:15px;
 
   @media print {
-    margin-top: 20px;
+    margin-top: 0;
+    width: 100%;
   }
 }
 
@@ -182,6 +183,20 @@ body {
   font-size: 1.6rem;
   text-align: right;
 }
+
+
+mark {
+  background-color: black !important;
+  color: white !important;
+  padding: 5px;
+  border-radius: 3px;
+  print-color-adjust: exact;
+}
+img, div, span { 
+  print-color-adjust: exact;
+
+}
+
 
 @media print {
   a[href]:after {
@@ -232,7 +247,7 @@ body {
     width:8.33333333%;
   }
   .col-print-12 {
-    width: 100%;
+    //width: 100%;
   }
 
   .no-print, .no-print * {

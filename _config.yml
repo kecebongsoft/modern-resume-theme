@@ -6,38 +6,38 @@ repository: Git repository where your resume will be hosted, only required if yo
 version: 2
 
 # Personal info
-name: Your Name
-title: Your job title
-email: Your email (optional)
+name: Dedy Purwanto
+title: Senior Software Engineer (Web & Backend)
+email: dedypurwanto2612@gmail.com
 # email_title: Email (Email title override)
-phone: Your phone number (optional)
+#phone: Your phone number (optional)
 # phone_title: Phone (Phone title override)
-website: Your website (eg. https://google.com)(optional)
+website: kecebongsoft.github.io
 # website_title: Web (Website title override)
 
 # Dark Mode (true/false/never)
-darkmode: false
+darkmode: never
 
 # Social links
-twitter_username: jekyllrb
-github_username:  jekyll
-stackoverflow_username: "00000001"
-dribbble_username: jekyll
-facebook_username: jekyll
-flickr_username: jekyll
-instagram_username: jekyll
-linkedin_username: jekyll
-xing_username: jekyll
-pinterest_username: jekyll
-youtube_username: jekyll
-orcid_username: 0000-0000-0000-0000
-googlescholar_username: D847cGsAAAAJ
+#twitter_username: jekyllrb
+github_username:  kecebongsoft
+#stackoverflow_username: "00000001"
+#dribbble_username: jekyll
+#facebook_username: jekyll
+#flickr_username: jekyll
+#instagram_username: jekyll
+linkedin_username: dedipurwanto
+#xing_username: jekyll
+#pinterest_username: jekyll
+#youtube_username: jekyll
+#orcid_username: 0000-0000-0000-0000
+#googlescholar_username: D847cGsAAAAJ
 
 # Additional icon links
 additional_links:
-- title: Link name
-  icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-  url: Link url (eg. https://google.com)
+#- title: Link name
+#  icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#  url: Link url (eg. https://google.com)
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
 #   url: Link url (eg. https://google.com)
@@ -50,69 +50,122 @@ additional_links:
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: Directory of profile image (eg. images/profile.jpg)
+about_profile_image: images/pic.png
+about_profile_image_cropped: images/pic_cropped.png
 about_content: | # this will include new lines to allow paragraphs
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
-
-  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
-    - Lists
-    - Tables
-    - <a href="google.com">Links</a>
-    - Images ![alt text](/images/landscape-trees.jpg "Trees")
-
+  Hi there! I have 10 years of web and backend experience under my belt, and I love building meaningful, impactful and scalable products for people. My stack revolves around Python, but I love to learn many other languages / frameworks as well. I am looking forward to join your company and build awesome products together!
+  <table style="font-size: 12pt;">
+    <tr>
+      <td style="width: 22%">Stacks:
+      </td>
+      <td>
+        <mark class="tag">Python</mark>
+        <mark>Django</mark>
+        <mark>FastAPI</mark>
+        <mark>Django Rest Framework</mark>
+        <mark>Celery</mark>
+        <mark>Flask</mark>
+        <mark>Vue.JS</mark>
+        <mark>Angular</mark>
+        <mark>React</mark>
+        <mark>GraphQL</mark>
+      </td>
+    </tr>
+    <tr>
+      <td>Cloud providers: </td>
+      <td>
+        <mark>AWS</mark>
+        <mark>GCP</mark>
+        <mark>Digital Ocean</mark>
+      </td>
+    </tr>
+    <tr>
+      <td>Software & toolings:  </td>
+      <td>
+        <mark>PostgreSQL</mark>
+        <mark>MySQL</mark>
+        <mark>Git</mark>
+        <mark>Docker</mark>
+        <mark>Jenkins</mark>
+        <mark>Fabric</mark>
+        <mark>New Relic</mark>
+        <mark>DataDog</mark>
+        <mark>Sentry</mark>
+      </td>
+    </tr>
+    <tr>
+      <td>Development practices:</td>
+      <td>
+        <mark>CI / CD</mark>
+        <mark>Domain-Driven Development</mark>
+        <mark>12 Factor App</mark>
+        <mark>Automated Testing</mark>
+      </td>
+    </tr>
+  </table>
 content:
-  - title: Projects # Title for the section
+  - title: Professional Experiences
+    layout: list
+    content:
+      - layout: right
+        title: Gr4vy, Inc
+        sub_title: Senior Software Engineer (Remote)
+        caption: Nov 2022 - Present
+        link: www.gr4vy.com
+        quote: >
+          Gr4vy is zero-code platform for merchants to integrate with payment providers around the globe.
+        description: | # this will include new lines to allow paragraphs
+          * I developed new API integrations for upcoming payment providers, going through their API references and implementing various transaction interfaces such as credit card authorization, captures, refunds, etc.
+          * I developed and maintained a set of features to help merchant design payment flows for their customers, to give a frictionless purchasing experience for customers, as well as a cost-efficient transaction for the merchants.
+          * Code reviews, unit testing, and some production monitoring.
+          * Stacks: Python, FastAPI, React, PostgreSQL, Docker, GCP, CI/CD, Github, Micro-services architecture
+      - layout: right
+        title: F-Secure Corporation
+        sub_title: Lead Software Engineer
+        caption: Feb 2015 - Nov 2022
+        link: www.f-secure.com
+        quote: >
+          F-Secure provides various cyber security solutions to B2B and B2C, including Antivirus solutions, VPN, Password Manager, Secure Routers, etc.
+        description: | # this will include new lines to allow paragraphs
+          * I developed and maintain a set of high-traffic APIs for our ISPs and other internal teams.
+          * I developed and maintain an end-user portal for customers to purchase and maintain their cyber-security subscriptions, with around 2 million customers in total.
+          * Code reviews, unit testing, architecture design, production monitoring, etc.
+          * Stacks: Python, Django, Vue.JS, PostgreSQL, AWS, NewRelic, GraphQL
+      - layout: right
+        title: EasyUni
+        sub_title: Software Engineer
+        caption: April 2011 - January 2015
+        link: www.easyuni.com
+        quote: >
+          EasyUni helps high-school student find and enroll to universities abroad.
+        description: | # this will include new lines to allow paragraphs
+          * I developed and maintained our end-user portal for students to search and apply to various universities abroad.
+          * Code reviews, architecture design, production monitoring, etc.
+          * Stacks: Python, Django, Bootstrap, NewRelic.
+  - title: Personal Project & Education
     layout: list # Type of content section (list/text)
     content:
       - layout: left
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
-        title: Project name
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
-        additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+        title: Everypocket
+        link: www.everypocket.com
+        link_text: www.everypocket.com
         quote: >
-          Short overview of the project (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
-  - title: Experience
-    layout: list
-    content:
-      - layout: right
-        title: Company name
-        sub_title: Job title
-        caption: Date Range (eg. November 2016 - present)
-        link: Link to company (optional)
-        quote: >
-          Short description of the company (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description of role
-  - title: Education
-    layout: list
-    content:
-      - layout: top-right
-        title: Institution name
-        sub_title: Qualifications (eg. BA Performing Arts)
-        caption: Date Range (eg. 2016 - 2019)
-        quote: >
-          Short institution or course description (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description of qualification
+          I developed Everypocket to help me and others categorize and track our daily spending, using envelope-based budgeting, every cent is made transparent. It was launched in 2015 and today it has a couple of thousands of users.
+      - layout: left
+        title: INTI International University Malaysia
+        sub_title: BA (Honours) in Software Engineering
+        caption: 2007-2011
+        quote: > # this will include new lines to allow paragraphs
+          Awards: Best Final Year Project on song-pattern recognition and suggeting similar songs to listeners.
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
-
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+      I love coding, building products, and tinkering with new stuff, be it programming languages, frameworks, libraries, new paradigms, or other non-work related such as sandbox video games and toolings. I am currently looking for a remote position in Indonesia, I am familiar with remote-work arrangements and have worked with teams in different timezones.
 
 # Footer
-footer_show_references: true
+footer_show_references: false
 # references_title: References on request (Override references text)
 
 # Build settings
